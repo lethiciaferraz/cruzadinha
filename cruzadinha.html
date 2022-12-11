@@ -1,509 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRUZADINHA</title>
     <script>
-        function CheckAnswer() {
-            let answer = document.querySelector("input").value;
+      function CheckAnswer() {
+        let answer = document.querySelector("input").value;
 
-            for (let node of document.querySelectorAll("td")) {
-                if (node.ClassName.IndexOf(answer) >= 0) {
-                    node.style = "color: black";
-                }
-
-            }
-        
+        for (let node of document.querySelectorAll("td")) {
+          if (node.className.indexOf(answer) >= 0) {
+            node.style = "color: black;";
+          }
         }
+
+        document.querySelector("input").value = "";
+      }
     </script>
     <style>
-        td {
-            border: 1px solid black;
-            width: 20px;
-            height: 20px;
-            text-align: center;
-            color: white;
+      td {
+        border: 1px solid black;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        color: white;
+      }
 
-        }
+      td:empty {
+        background: black;
+      }
 
-        td:empty {
-            background: black;
+      sup {
+        color: black;
+      }
 
-        }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        sup {
-            color: black;
+      .vertical {
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        height: 580px;
+        background-color: aquamarine;
+        align-items: center;
+        border-radius: 20px;
+        padding: 10px;
+      }
 
-        }
+      .horizontal {
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        height: 580px;
+        background-color: brown;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 10px;
+      }
+
+      .dicas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Arquitetura Computacional</h1>
     <table>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <sup>3</sup>R</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES'"><sup>3</sup>R</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
 
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><sup>4</sup>E</td>
-            <td>P</td>
-            <td class="REGISTRADORES"><sup>4</sup>R</td>
-            <td>O</td>
-            <td>M</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>G</td>
-            <td></td>
-            <td>A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>I</td>
-            <td></td>
-            <td>M</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><sup>6</sup>C</td>
-            <td>S</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>T</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>R</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><sup>4</sup>F</td>
-            <td>L</td>
-            <td>A</td>
-            <td>S</td>
-            <td>H</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>D</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><sup>1</sup>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>O</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>P</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><sup>4</sup>R</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><sup>5</sup>D</td>
-            <td></td>
-            <td><sup>7</sup>A</td>
-            <td>D</td>
-            <td>D</td>
-            <td>R</td>
-            <td>E</td>
-            <td>S</td>
-            <td>S</td>
-            <td>B</td>
-            <td>U</td>
-            <td>S</td>
-        </tr>
-        <tr>
-            <td>O</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>M</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>E</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><sup>4</sup>M</td>
-            <td>E</td>
-            <td>M</td>
-            <td>O</td>
-            <td>R</td>
-            <td>I</td>
-            <td>A</td>
-            <td><sup>10</sup>D</td>
-            <td>E</td>
-            <td>M</td>
-            <td>A</td>
-            <td>S</td>
-            <td>S</td>
-            <td>S</td>
-            <td>A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>U</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><sup>8</sup>D</td>
-            <td>A</td>
-            <td>T</td>
-            <td>A</td>
-            <td>B</td>
-            <td><sup>2</sup>U</td>
-            <td>S</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>L</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>L</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>C</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>O</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><sup>10</sup>Q</td>
-            <td>U</td>
-            <td>A</td>
-            <td>D</td>
-            <td>C</td>
-            <td>O</td>
-            <td>R</td>
-            <td>E</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>E</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES' 'EPROM'"><sup>4</sup>E</td>
+        <td class="'EPROM'">P</td>
+        <td class="'EPROM' 'RAM'"><sup>4</sup>R</td>
+        <td class="'EPROM'">O</td>
+        <td class="'EPROM'">M</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES'">G</td>
+        <td></td>
+        <td class="'RAM'">A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES''I5'">I</td>
+        <td class="I5"><sup>9</sup>5</td>
+        <td class="'RAM'">M</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'CS'"><sup>6</sup>C</td>
+        <td class="'REGISTRADORES' 'CS'">S</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES'">T</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES'">R</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'FLASH'"><sup>4</sup>F</td>
+        <td class="'FLASH'">L</td>
+        <td class="'REGISTRADORES' 'FLASH'">A</td>
+        <td class="'FLASH'">S</td>
+        <td class="'FLASH'">H</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES'">D</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'CPU'"><sup>1</sup>C</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES'">O</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'CPU'">P</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="'ROM'"><sup>4</sup>R</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'DMA'"><sup>5</sup>D</td>
+        <td></td>
+        <td class="'ADDRESS BUS'"><sup>7</sup>A</td>
+        <td class="'ADDRESS BUS'">D</td>
+        <td class="'ADDRESS BUS'">D</td>
+        <td class="'REGISTRADORES' 'ADDRESS BUS'">R</td>
+        <td class="'ADDRESS BUS'">E</td>
+        <td class="'ADDRESS BUS'">S</td>
+        <td class="'ADDRESS BUS'">S</td>
+        <td class="'ADDRESS BUS'">B</td>
+        <td class="'ADDRESS BUS'">U</td>
+        <td class="'ADDRESS BUS'">S</td>
+      </tr>
+      <tr>
+        <td class="'ROM'">O</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'DMA'">M</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'REGISTRADORES'">E</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="'MEMORIA DE MASSA'"><sup>4</sup>M</td>
+        <td class="'MEMORIA DE MASSA'">E</td>
+        <td class="'MEMORIA DE MASSA'">M</td>
+        <td class="'MEMORIA DE MASSA'">O</td>
+        <td class="'MEMORIA DE MASSA'">R</td>
+        <td class="'MEMORIA DE MASSA' 'I7'">I</td>
+        <td class="'MEMORIA DE MASSA'">A</td>
+        <td class="'MEMORIA DE MASSA' 'DUAL CORE'"><sup>10</sup>D</td>
+        <td class="'MEMORIA DE MASSA'">E</td>
+        <td class="'MEMORIA DE MASSA'">M</td>
+        <td class="'MEMORIA DE MASSA'">A</td>
+        <td class="'REGISTRADORES' 'MEMORIA DE MASSA'">S</td>
+        <td class="'MEMORIA DE MASSA'">S</td>
+        <td class="'MEMORIA DE MASSA'">A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="I7"><sup>9</sup>7</td>
+        <td></td>
+        <td class="'DUAL CORE'">U</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'DATA BUS'"><sup>8</sup>D</td>
+        <td class="'DATA BUS' 'DUAL CORE'">A</td>
+        <td class="'DATA BUS'">T</td>
+        <td class="'DATA BUS'">A</td>
+        <td class="'DATA BUS'">B</td>
+        <td class="'DATA BUS' 'ULA'"><sup>2</sup>U</td>
+        <td class="'DATA BUS'">S</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'DUAL CORE'">L</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'ULA'">L</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'DUAL CORE'">C</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'ULA'">A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'DUAL CORE'">O</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="'QUAD CORE'"><sup>10</sup>Q</td>
+        <td class="'QUAD CORE'">U</td>
+        <td class="'QUAD CORE'">A</td>
+        <td class="'QUAD CORE'">D</td>
+        <td class="'QUAD CORE'">C</td>
+        <td class="'QUAD CORE'">O</td>
+        <td class="'QUAD CORE' 'DUAL CORE'">R</td>
+        <td class="'QUAD CORE'">E</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="'DUAL CORE'">E</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
     </table>
-    <br><br>
-    <form>
-        <input />
+    <br /><br />
+
+    <h3>Escreva sua resposta:</h3>
+    <form onsubmit="javascript:CheckAnswer()" action="javascript:null">
+      <input />
     </form>
-    <h2>DICAS</h2>
-    <h2>Vertical </h2>
-    <ol>
-        <li>1-Unidade central de processamento. <br> <br>
-            2-Unidade lógica e aritmética.<br> <br>
-            3-É a memória dentro da própria CPU
-            que armazena n bits.
-            Serve para: armazena e deslocar informações binárias.
-            Localizado:No interior de um microprocessador, dentro da CPU.<br> <br>
-            4-Memória: Transportar dados e informações dos programas instalados no PC.<br> <br>
-            4- Memória que: armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico.
-            <br> <br>
-            5-método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente da memória
-            principal.<br> <br>
+    <div class="dicas">
+      <h1>DICAS</h1>
+    </div>
+    <div class="container">
+      <div class="vertical">
+        <ol>
+          <h2>Vertical</h2>
+          1- Unidade central de processamento.
+          <br />
+          <br />
+          2- Unidade lógica e aritmética.<br />
+          <br />
+          3- É a memória dentro da própria CPU que armazena n bits.<br />
+          Serve para: armazena e deslocar informações binárias.
+          <br />
+          Localizado:No interior de um microprocessador, dentro da CPU.<br />
+          <br />
+          4- Memória que: transportar dados e informações dos programas
+          instalados no PC.<br />
+          <br />
+          4- Memória que: armazena firmwares ou pequenos softwares que funcionam
+          apenas em um hardware específico.
+          <br />
+          <br />
+          5- Método que permite que um dispositivo de entrada e saída envie ou
+          receba dados diretamente da memória principal.<br />
+          <br />
+          10- Processador que possui dois núcleos.
+        </ol>
+      </div>
+      <div class="horizontal">
+        <ol>
+          <h2>Horizontal</h2>
 
-            10- processador que possui dois núcleos
+          4- Memória que: armazena as informações, para serem recuperadas e
+          utilizadas posteriormente, mesmo depois de a Alimentação ter sido
+          interrompida.<br />
+          <br />
+          4- Memória que: é uma tecnologia de armazenamento de dados que usa uma
+          memória não volátil.<br />
+          <br />
+          4- Memória que: armazena grandes quantidades de informações.<br />
+          <br />
+          6- Selecionar um dos circuitos integrados entre vários conectados ao
+          mesmo barramento de computador.<br />
+          <br />
+          7- Arquitetura de barramento de computador usada para transferir dados
+          entre dispositivos identificados pelo endereço de hardware da memória
+          física.<br />
+          <br />
+          8- É um sistema dentro de um computador ou dispositivo, consistindo em
+          um conector ou conjunto de fios, que fornece transporte de dados.<br />
+          <br />
 
+          9- Arquitetura do core: Microprocessador.
+          <br />
 
-        </li>
-    </ol>
-    <h2>Horizontal</h2>
-    <ol>
-        <li>
-            4-Memória que: armazena as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de
-            a alimentação ter sido interrompida.<br> <br>
-            4-Memória que: é uma tecnologia de armazenamento de dados que usa uma memória não volátil.<br> <br>
-            4-Memória que: armazena grandes quantidades de informações.<br> <br>
-            6-selecionar um dos circuitos integrados entre vários conectados ao mesmo barramento de computador.<br> <br>
-            7-arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo
-            endereço de hardware da memória física.<br> <br>
-            8-é um sistema dentro de um computador ou dispositivo, consistindo em um conector ou conjunto de fios, que
-            fornece transporte de dados.<br> <br>
-            9-Arquitetura do core: Microprocessador. <br>
+          Qual seu fabricante: Intel
+          <br />
 
-            Qual seu fabricante: Intel <br>
+          Inicio da Fabricação : 2009
+          <br />
 
-            Inicio da Fabricação : 2009 <br>
+          Principais caractericas: Quad Core.<br />
+          <br />
 
-            Principais caractericas: Quad Core.<br> <br>
-            9-Arquitetura do core: Microprocessador <br>
+          9- Arquitetura do core: Microprocessador
+          <br />
 
-            Qual seu fabricante: Intel <br>
+          Qual seu fabricante: Intel
+          <br />
 
-            Inicio da Fabricação : 2008 <br>
+          Inicio da Fabricação : 2008
+          <br />
 
-            Principais caractericas: Hexa Core <br><br>
+          Principais caractericas: Hexa Core.
+          <br /><br />
 
-            10-processador que possui quatro núcleos.
-
-        </li>
-    </ol>
-
-</body>
-
+          10- Processador que possui quatro núcleos.
+        </ol>
+      </div>
+    </div>
+  </body>
 </html>
