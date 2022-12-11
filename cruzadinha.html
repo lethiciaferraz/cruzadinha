@@ -1,12 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUZADINHA</title>
+    <script>
+        function CheckAnswer() {
+            let answer = document.querySelector("input").value;
+
+            for (let node of document.querySelectorAll("td")) {
+                if (node.ClassName.IndexOf(answer) >= 0) {
+                    node.style = "color: black";
+                }
+
+            }
+        
+        }
+    </script>
+    <style>
+        td {
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            color: white;
+
+        }
+
+        td:empty {
+            background: black;
+
+        }
+
+        sup {
+            color: black;
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>Arquitetura Computacional</h1>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <sup>3</sup>R</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><sup>4</sup>E</td>
+            <td>P</td>
+            <td class="REGISTRADORES"><sup>4</sup>R</td>
+            <td>O</td>
+            <td>M</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>G</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>I</td>
+            <td></td>
+            <td>M</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><sup>6</sup>C</td>
+            <td>S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>T</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>R</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><sup>4</sup>F</td>
+            <td>L</td>
+            <td>A</td>
+            <td>S</td>
+            <td>H</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>D</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><sup>1</sup>C</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>P</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><sup>4</sup>R</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><sup>5</sup>D</td>
+            <td></td>
+            <td><sup>7</sup>A</td>
+            <td>D</td>
+            <td>D</td>
+            <td>R</td>
+            <td>E</td>
+            <td>S</td>
+            <td>S</td>
+            <td>B</td>
+            <td>U</td>
+            <td>S</td>
+        </tr>
+        <tr>
+            <td>O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>M</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><sup>4</sup>M</td>
+            <td>E</td>
+            <td>M</td>
+            <td>O</td>
+            <td>R</td>
+            <td>I</td>
+            <td>A</td>
+            <td><sup>10</sup>D</td>
+            <td>E</td>
+            <td>M</td>
+            <td>A</td>
+            <td>S</td>
+            <td>S</td>
+            <td>S</td>
+            <td>A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>U</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><sup>8</sup>D</td>
+            <td>A</td>
+            <td>T</td>
+            <td>A</td>
+            <td>B</td>
+            <td><sup>2</sup>U</td>
+            <td>S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>L</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>L</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><sup>10</sup>Q</td>
+            <td>U</td>
+            <td>A</td>
+            <td>D</td>
+            <td>C</td>
+            <td>O</td>
+            <td>R</td>
+            <td>E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+
+    </table>
+    <br><br>
+    <form>
+        <input />
+    </form>
+    <h2>DICAS</h2>
+    <h2>Vertical </h2>
+    <ol>
+        <li>1-Unidade central de processamento. <br> <br>
+            2-Unidade lógica e aritmética.<br> <br>
+            3-É a memória dentro da própria CPU
+            que armazena n bits.
+            Serve para: armazena e deslocar informações binárias.
+            Localizado:No interior de um microprocessador, dentro da CPU.<br> <br>
+            4-Memória: Transportar dados e informações dos programas instalados no PC.<br> <br>
+            4- Memória que: armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico.
+            <br> <br>
+            5-método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente da memória
+            principal.<br> <br>
+
+            10- processador que possui dois núcleos
+
+
+        </li>
+    </ol>
+    <h2>Horizontal</h2>
+    <ol>
+        <li>
+            4-Memória que: armazena as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de
+            a alimentação ter sido interrompida.<br> <br>
+            4-Memória que: é uma tecnologia de armazenamento de dados que usa uma memória não volátil.<br> <br>
+            4-Memória que: armazena grandes quantidades de informações.<br> <br>
+            6-selecionar um dos circuitos integrados entre vários conectados ao mesmo barramento de computador.<br> <br>
+            7-arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo
+            endereço de hardware da memória física.<br> <br>
+            8-é um sistema dentro de um computador ou dispositivo, consistindo em um conector ou conjunto de fios, que
+            fornece transporte de dados.<br> <br>
+            9-Arquitetura do core: Microprocessador. <br>
+
+            Qual seu fabricante: Intel <br>
+
+            Inicio da Fabricação : 2009 <br>
+
+            Principais caractericas: Quad Core.<br> <br>
+            9-Arquitetura do core: Microprocessador <br>
+
+            Qual seu fabricante: Intel <br>
+
+            Inicio da Fabricação : 2008 <br>
+
+            Principais caractericas: Hexa Core <br><br>
+
+            10-processador que possui quatro núcleos.
+
+        </li>
+    </ol>
+
 </body>
+
 </html>
