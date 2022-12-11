@@ -1,38 +1,38 @@
 1- O que é a ___: unidade central de processamento
 
-O que é a ULA: unidade lógica e aritmética
+2- O que é a ULA: unidade lógica e aritmética
 
-O que são registradores: é a memória dentro da própria CPU
+3- O que são registradores: é a memória dentro da própria CPU
 que armazena n bits
 
-Pra que servem: armazenar e deslocar informações binárias
+3- Pra que servem: armazenar e deslocar informações binárias
 
-Onde se localizam: no interior de um microprocessador, dentro da CPU.
+3- Onde se localizam: no interior de um microprocessador, dentro da CPU.
 
 Quais são os tipos de memórias: RAM, ROM, Eprom,
 Flash, memória de massa.
 
-Qual a finalidade da memória RAM: transportar dados e informações dos programas instalados no PC
+4- Qual a finalidade da memória RAM: transportar dados e informações dos programas instalados no PC
 
-Qual a finalidade da memória ROM:  armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico. 
+4- Qual a finalidade da memória ROM:  armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico. 
 
-Qual a finalidade da memória Eprom: armazenar as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter sido interrompida.
+4- Qual a finalidade da memória Eprom: armazenar as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter sido interrompida.
 
-Qual a finalidade da memória Flash: é uma tecnologia de armazenamento de dados que usa uma memória não volátil.
+4- Qual a finalidade da memória Flash: é uma tecnologia de armazenamento de dados que usa uma memória não volátil.
 
-Qual a finalidade da memória memória de massa: armazenar grandes quantidades de informações.
+4- Qual a finalidade da memória memória de massa: armazenar grandes quantidades de informações.
 
-O que é um DMA:  método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente da memória principal
+5- O que é um DMA:  método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente da memória principal
 
-O que é um Chip Select:selecionar um dos circuitos integrados entre vários conectados ao mesmo barramento de computador
+6- O que é um Chip Select:selecionar um dos circuitos integrados entre vários conectados ao mesmo barramento de computador
 
-O que é um address bus: arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo endereço de hardware da memória física
+7- O que é um address bus: arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo endereço de hardware da memória física
 
-O que é um data bus: é um sistema dentro de um computador ou dispositivo, consistindo em um conector ou conjunto de fios, que fornece transporte de dados
+8- O que é um data bus: é um sistema dentro de um computador ou dispositivo, consistindo em um conector ou conjunto de fios, que fornece transporte de dados
 
 
 
-Arquitetura do core: Core i5 Microprocessador
+9-Arquitetura do core: Core i5 Microprocessador
 
 Qual seu fabricante: Intel
 
@@ -41,7 +41,7 @@ Inicio da Fabricação : 2009
 Principais caractericas: Quad Core
 
 
-Arquitetura do core:Core i7Microprocessador
+9- Arquitetura do core:Core i7Microprocessador
 
 Qual seu fabricante: Intel
 
@@ -52,7 +52,7 @@ Principais caractericas: Hexa Core
 
 
 
-O que é um processador dual Core: processador que possui dois núcleos
+10- O que é um processador dual Core: processador que possui dois núcleos
 
 
-O que é um processador Quad Core:  processador que possui quatro núcleos 
+10- O que é um processador Quad Core:  processador que possui quatro núcleos 
