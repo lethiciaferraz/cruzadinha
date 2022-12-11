@@ -1,79 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRUZADINHA</title>
-    <script>
-      function CheckAnswer() {
-        let answer = document.querySelector("input").value;
 
-        for (let node of document.querySelectorAll("td")) {
-          if (node.className.indexOf(answer) >= 0) {
-            node.style = "color: black;";
-          }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="cruzadinha.css">
+  <title>CRUZADINHA</title>
+  <script>
+    function CheckAnswer() {
+      let answer = document.querySelector("input").value;
+
+      for (let node of document.querySelectorAll("td")) {
+        if (node.className.indexOf(answer) >= 0) {
+          node.style = "color: black;";
         }
-
-        document.querySelector("input").value = "";
-      }
-    </script>
-    <style>
-      td {
-        border: 1px solid black;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        color: white;
       }
 
-      td:empty {
-        background: black;
-      }
+      document.querySelector("input").value = "";
+    }
+  </script>
+</head>
 
-      sup {
-        color: black;
-      }
-
-      .container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-
-      .vertical {
-        display: flex;
-        flex-direction: column;
-        width: 650px;
-        height: 580px;
-        background-color: aquamarine;
-        align-items: center;
-        border-radius: 20px;
-        padding: 10px;
-      }
-
-      .horizontal {
-        display: flex;
-        flex-direction: column;
-        width: 650px;
-        height: 580px;
-        background-color: brown;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        padding: 10px;
-      }
-
-      .dicas {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-  </head>
-
-  <body>
-    <h1>Arquitetura Computacional</h1>
+<body>
+  <h1>Arquitetura Computacional</h1>
+  <h2>Cruzadinha desenvolvida por Lethícia Ferraz e Lívia Leal</h2>
+  <div class="cruzadinha">
+    <div class="input">
+      <form onsubmit="javascript:CheckAnswer()" action="javascript:null">
+        <h3>Instruções</h3>
+        <p> 
+          1.Escreva a resposta em caps lock.<br>
+          2.Caso os quadrados continuem em branco, você escreveu errado ou não está com o CAPS Lk ligado. <br>
+          3.Leia as dicas logo abaixo.
+        </p>
+        <h3>Escreva sua resposta(EM CAPSLOCK): </h3> <input />
+      </form>
+    </div>
     <table>
       <tr>
         <td></td>
@@ -293,7 +256,7 @@
         <td class="'ADDRESS BUS'">S</td>
         <td class="'ADDRESS BUS'">S</td>
         <td class="'ADDRESS BUS'">B</td>
-        <td class="'ADDRESS BUS'">U</td>
+        <td class="'ADDRESS BUS' 'CPU'">U</td>
         <td class="'ADDRESS BUS'">S</td>
       </tr>
       <tr>
@@ -317,7 +280,7 @@
         <td></td>
       </tr>
       <tr>
-        <td class="'MEMORIA DE MASSA'"><sup>4</sup>M</td>
+        <td class="'MEMORIA DE MASSA' 'ROM'"><sup>4</sup>M</td>
         <td class="'MEMORIA DE MASSA'">E</td>
         <td class="'MEMORIA DE MASSA'">M</td>
         <td class="'MEMORIA DE MASSA'">O</td>
@@ -477,93 +440,86 @@
         <td></td>
       </tr>
     </table>
-    <br /><br />
+  </div>
+  <br /><br />
 
-    <h3>Escreva sua resposta:</h3>
-    <form onsubmit="javascript:CheckAnswer()" action="javascript:null">
-      <input />
-    </form>
-    <div class="dicas">
-      <h1>DICAS</h1>
+
+  <div class="dicas">
+    <h1>DICAS</h1>
+  </div>
+  <div class="container">
+    <div class="vertical">
+      <ol>
+        <h2>Vertical</h2>
+        1- Unidade central de processamento.
+        <br />
+        <br />
+        2- Unidade lógica e aritmética.<br />
+        <br />
+        3- É a memória dentro da própria CPU que armazena n bits.<br />
+        Serve para: armazena e deslocar informações binárias.
+        <br />
+        Localizado:No interior de um microprocessador, dentro da CPU.<br />
+        <br />
+        4- Memória que: transportar dados e informações dos programas
+        instalados no PC.<br />
+        <br />
+        4- Memória que: armazena firmwares ou pequenos softwares que funcionam
+        apenas em um hardware específico.
+        <br />
+        <br />
+        5- Método que permite que um dispositivo de entrada e saída envie ou
+        receba dados diretamente da memória principal.<br />
+        <br />
+        10- Processador que possui dois núcleos.
+      </ol>
     </div>
-    <div class="container">
-      <div class="vertical">
-        <ol>
-          <h2>Vertical</h2>
-          1- Unidade central de processamento.
-          <br />
-          <br />
-          2- Unidade lógica e aritmética.<br />
-          <br />
-          3- É a memória dentro da própria CPU que armazena n bits.<br />
-          Serve para: armazena e deslocar informações binárias.
-          <br />
-          Localizado:No interior de um microprocessador, dentro da CPU.<br />
-          <br />
-          4- Memória que: transportar dados e informações dos programas
-          instalados no PC.<br />
-          <br />
-          4- Memória que: armazena firmwares ou pequenos softwares que funcionam
-          apenas em um hardware específico.
-          <br />
-          <br />
-          5- Método que permite que um dispositivo de entrada e saída envie ou
-          receba dados diretamente da memória principal.<br />
-          <br />
-          10- Processador que possui dois núcleos.
-        </ol>
-      </div>
-      <div class="horizontal">
-        <ol>
-          <h2>Horizontal</h2>
+    <div class="horizontal">
+      <ol>
+        <h2>Horizontal</h2>
 
-          4- Memória que: armazena as informações, para serem recuperadas e
-          utilizadas posteriormente, mesmo depois de a Alimentação ter sido
-          interrompida.<br />
-          <br />
-          4- Memória que: é uma tecnologia de armazenamento de dados que usa uma
-          memória não volátil.<br />
-          <br />
-          4- Memória que: armazena grandes quantidades de informações.<br />
-          <br />
-          6- Selecionar um dos circuitos integrados entre vários conectados ao
-          mesmo barramento de computador.<br />
-          <br />
-          7- Arquitetura de barramento de computador usada para transferir dados
-          entre dispositivos identificados pelo endereço de hardware da memória
-          física.<br />
-          <br />
-          8- É um sistema dentro de um computador ou dispositivo, consistindo em
-          um conector ou conjunto de fios, que fornece transporte de dados.<br />
-          <br />
+        4- Memória que: armazena as informações, para serem recuperadas e
+        utilizadas posteriormente, mesmo depois da alimentação ter sido
+        interrompida.<br />
+        4- Memória que: armazena dados e usa uma memória não volátil.<br />
+        4- Memória que: armazena grandes quantidades de informações.<br />
+        6- Seleciona um dos circuitos integrados entre vários conectados ao
+        mesmo barramento de computador.<br />
+        7- Arquitetura de barramento de computador usada para transferir dados
+        entre dispositivos identificados pelo endereço de hardware da memória
+        física.<br />
+        8- É um sistema dentro de um computador, consistindo em
+        um conector ou conjunto de fios, que fornece transporte de dados.<br />
 
-          9- Arquitetura do core: Microprocessador.
-          <br />
+        9- Arquitetura do core: Microprocessador.
+        <br />
 
-          Qual seu fabricante: Intel
-          <br />
+        Qual seu fabricante: Intel
+        <br />
 
-          Inicio da Fabricação : 2009
-          <br />
+        Inicio da Fabricação : 2009
+        <br />
 
-          Principais caractericas: Quad Core.<br />
-          <br />
+        Principais caractericas: Quad Core.
+        <br />
 
-          9- Arquitetura do core: Microprocessador
-          <br />
+        9- Arquitetura do core: Microprocessador
+        <br />
 
-          Qual seu fabricante: Intel
-          <br />
+        Qual seu fabricante: Intel
+        <br />
 
-          Inicio da Fabricação : 2008
-          <br />
+        Inicio da Fabricação : 2008
+        <br />
 
-          Principais caractericas: Hexa Core.
-          <br /><br />
+        Principais caractericas: Hexa Core.
+        <br />
 
-          10- Processador que possui quatro núcleos.
-        </ol>
-      </div>
+        10- Processador que possui quatro núcleos.
+      </ol>
     </div>
-  </body>
+  </div>
+
+</body>
+
 </html>

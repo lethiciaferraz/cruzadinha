@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body {}
+
+h1 , h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    width: 430px;
+    height: 250px;
+    padding: 20px;
+    background-color: rgb(251, 160, 90);
+    text-align: justify;
+    border-radius: 40px;
+
+
+}
+
+.cruzadinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+}
+
+td:empty {
+    background: black;
+}
+
+sup {
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 580px;
+    background-color: rgb(251, 160, 90);
+    align-items: center;
+    border-radius: 40px;
+    padding: 20px;
+    font-family: poppins;
+    text-align: justify;
+    align-items: center;
+
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 580px;
+    background-color: rgb(251, 160, 90);
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 20px;
+    font-family: poppins;
+    text-align: justify;
+
+}
+
+.vertical h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.dicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+}
