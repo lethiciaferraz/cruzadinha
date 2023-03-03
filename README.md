@@ -1,2 +1,2 @@
-# cruzadinha
-atividade de arqui comp São Paulo Tech School
+#cruzadinha
+Atividade de Arquitetura Computacional São Paulo Tech School
